@@ -23,10 +23,6 @@ To check basic functionality, run  `./call_all_test_playbooks_without_jenkins.sh
 ├── ansible.cfg                                 # local Ansible configuration
 ├── call_all_test_playbooks.sh                  #
 ├── call_all_test_playbooks_without_jenkins.sh  # scripts to start a test run
-├── callback_plugins                            # https://docs.ansible.com/ansible
-│   │                                           # /2.5/plugins/callback.html
-│   ├── junit2.py
-│   └── junit2.pyc
 ├── examples                                    # default folder for test run
 │   ├── subdir
 │   │   ├── test.junit.retry
@@ -35,33 +31,8 @@ To check basic functionality, run  `./call_all_test_playbooks_without_jenkins.sh
 │   │   └── tasks3i.yml
 │   ├── test.junit2.yml
 │   └── test.junit3.yml
-├── generate_output                             # todo
-│   ├── css
-│   │   └── junit.css
-│   ├── js
-│   │   ├── jquery-3.3.1.min.js
-│   │   └── junit.js
-│   └── junit2html.pl
 ├── hosts                                       # inventory file
-├── htmlreport                                  # folder for test results
-│   ├── 2018-07-30T15-12-22                     # automatically generated
-│   │   ├── index.html
-│   │   ├── playbooks
-│   │   │   ├── subdir
-│   │   │   │   └── test.junit.html
-│   │   │   ├── tasks
-│   │   │   │   └── tasks3i.html
-│   │   │   ├── test.junit2.html
-│   │   │   └── test.junit3.html
-│   │   ├── test.junit2.html
-│   │   ├── test.junit3.html
-│   │   └── test.junit.html
-│   ├── css
-│   │   └── junit.css
-│   └── js
-│       ├── jquery-3.3.1.min.js
-│       └── junit.js
-├── README.adoc
+── README.adoc
 └── test_matrix                                 # put your actual tests here
     ├── files
     │   └── script-configure.sh
